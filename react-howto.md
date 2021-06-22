@@ -177,6 +177,22 @@ export default App;
 
 > Não é necessário atribuir o CSS importado para nenhuma variável
 
+8. Caso o JSX ocupe mais de uma linha no arquivo, ele precisa estar envolto de parênteses:
+
+```javascript
+function GreetingMessage() {
+  const message = "Hello Pedro!";
+
+  return (
+    <div>
+      <u>{message}</u>
+    </div>
+  );
+}
+
+export default GreetingMessage;
+```
+
 ## Renderização condicional e listas
 
 ### Listas
@@ -329,3 +345,5 @@ export default App;
 ```
 
 > O código acima gera o seguinte erro: `Warning: The tag <studentList> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter.`
+
+## Os três pilares do React, parte 2: Props
