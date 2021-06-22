@@ -5,6 +5,8 @@ import WelcomeBlock from "./WelcomeBlock";
 
 import ProductCard from "./ProductCard";
 
+import Button from "./Button";
+
 const products = [
   {
     picture:
@@ -30,6 +32,11 @@ function App() {
   return (
     <div className="container mt-5">
       <WelcomeBlock />
+
+      <Button type="button" danger>
+        <i className="fas fa-download"></i>
+        <span>Baixar</span>
+      </Button>
 
       {products.map((productObj) => {
         return (
