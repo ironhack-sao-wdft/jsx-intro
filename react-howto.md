@@ -347,3 +347,26 @@ export default App;
 > O código acima gera o seguinte erro: `Warning: The tag <studentList> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter.`
 
 ## Os três pilares do React, parte 2: Props
+
+1. Tudo que é passado como "filho" de um componente (entre as tags de abertura e fechamento) fica disponível automaticamente em uma prop chamda `children`
+
+```javascript
+// Invocação do component Button
+<Button type="button">
+  <i className="fas fa-download"></i>
+  <span>Baixar</span>
+</Button>;
+
+// Definição do component Button
+function Button(props) {
+  return (
+    <button type={props.type} className="btn btn-primary">
+      {props.children}
+    </button>
+  );
+}
+
+export default Button;
+```
+
+> A prop `children` é muito utilizada quando é necessário enviar JSX do componente pai para o componente filho, pois as props comuns não aceitam JSX (HTML).

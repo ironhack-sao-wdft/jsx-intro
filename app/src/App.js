@@ -7,10 +7,11 @@ import ProductCard from "./ProductCard";
 
 import Button from "./Button";
 
+import logo from "./download.svg";
+
 const products = [
   {
-    picture:
-      "https://http2.mlstatic.com/D_Q_NP_2X_886292-MLB32408758670_102019-AB.webp",
+    picture: logo,
     description: "Kit 50 Cabides De Veludo Ultra Fino Antideslizante Bege",
     price: 165.9,
     discount: 0,

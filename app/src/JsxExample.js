@@ -6,16 +6,17 @@ import StudentList from "./StudentList";
 const name = "Pedro";
 
 function JsxExample() {
-  return;
-  <div>
-    <header>
-      <img src={logo} />
-    </header>
+  return (
     <div>
-      <h1>Bem-vindo ao React, {name.toUpperCase()}</h1>
+      <header>
+        <img src={logo} />
+      </header>
+      <div>
+        <h1>Bem-vindo ao React, {name.toUpperCase()}</h1>
+      </div>
+      <StudentList />
     </div>
-    <StudentList />
-  </div>;
+  );
 }
 
 export default JsxExample;
